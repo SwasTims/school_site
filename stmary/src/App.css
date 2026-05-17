@@ -29,6 +29,7 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: #BC0100;
+  text-decoration: none;
 }
 
 .navbar-links {
@@ -42,7 +43,8 @@ body {
 .navbar-links a {
   text-decoration: none;
   color: #000000;
-  font-weight: 400;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar-btn {
@@ -53,6 +55,19 @@ body {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #008CFF;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a.active {
+  color: #008CFF;
+  font-weight: 500;
+  border-bottom: 2px solid #008CFF;
+  padding-bottom: 2px;
 }
 
 .hero {
@@ -114,22 +129,29 @@ body {
   font-weight: 600;
   cursor: pointer;
   font-size: 0.9rem;
+  transition: background 0.3s ease;
 }
 
-.about {
+.hero-btn-secondary:hover {
+  background: #fff;
+  color: #008CFF;
+}
+
+.aboutsec {
   display: flex;
   align-items: center;
   gap: 56px;
   padding: 80px 64px;
   background: white;
+  text-align: left;
 }
 
-.about-image {
+.aboutsec-image {
   position: relative;
   flex-shrink: 0;
 }
 
-.about-image img {
+.aboutsec-image img {
   width: 420px;
   height: 300px;
   object-fit: cover;
@@ -137,7 +159,7 @@ body {
   border: 3px solid #008CFF;
 }
 
-.about-badge {
+.aboutsec-badge {
   position: absolute;
   bottom: 16px;
   right: -16px;
@@ -149,17 +171,17 @@ body {
   flex-direction: column;
 }
 
-.about-badge-number {
+.aboutsec-badge-number {
   font-size: 1.4rem;
   font-weight: 700;
 }
 
-.about-badge-text {
+.aboutsec-badge-text {
   font-size: 0.7rem;
   letter-spacing: 0.08em;
 }
 
-.about-heading {
+.aboutsec-heading {
   font-size: 1.4rem;
   font-weight: 700;
   color: #BC0100;
@@ -170,27 +192,27 @@ body {
   position: relative;
 }
 
-.about-heading::after {
+.aboutsec-heading::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 40px;
   height: 3px;
-  background: #BC0100;
+  background: #008CFF;
 }
 
-.about-heading::before {
+.aboutsec-heading::before {
   content: '';
   position: absolute;
   bottom: 0;
   left: 40px;
   width: 40px;
   height: 3px;
-  background: #008CFF;
+  background: #BC0100;
 }
 
-.about-body {
+.aboutsec-body {
   color: #374151;
   line-height: 1.8;
   font-size: 0.95rem;
@@ -198,27 +220,34 @@ body {
   text-align: left;
 }
 
-.about-btn {
-  padding: 10px 24px;
+.aboutsec-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #008CFF;
+  color: #008CFF;
+  padding: 3px 4px;
   background: transparent;
-  color: #1e3a8a;
-  border: 2px solid #1e3a8a;
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
   font-size: 0.9rem;
-  display: block;
-  text-align: left; 
+  align-items: left;
+}
+
+.aboutsec-btn:hover {
+  background: #008CFF;
+  color: #ffffff;
 }
 
 .stats {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #1e3a8a;
+  background: #E6F7FB;
   padding: 40px 64px;
   flex-wrap: wrap;
   gap: 24px;
+  border: #C0C7D6 solid 1px;
 }
 
 .stats-item {
@@ -229,16 +258,198 @@ body {
 }
 
 .stats-value {
-  color: #ffffff;
+  color: #1e3a8a;
   font-size: 2rem;
   font-weight: 700;
 }
 
 .stats-label {
-  color: #93c5fd;
+  color: #000000;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+.footer {
+  background: #0f2a4a;
+  color: #fff;
+  padding: 64px 64px 0;
+}
+
+.footer-top {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 48px;
+}
+
+.footer-brand {
+  max-width: 260px;
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.footer-tagline {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.footer-col-heading {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-contact-text {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.achievements {
+  padding: 80px 64px;
+  background: #fff;
+  text-align: center;
+}
+
+.achievements-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #BC0100;
+  display: inline-block;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.achievements-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left : 0px;
+  width: 40px;
+  height: 3px;
+  background: #008CFF;
+}
+
+.achievements-heading::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 40px;
+  height: 3px;
+  background:#BC0100;
+}
+
+.achievements-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.achievement-card {
+  width: 300px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.achievement-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 16px 16px 8px;
+}
+
+.achievement-desc {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0 16px 16px;
+}
+
+.achievements-btn-wrap {
+  margin-top: 40px;
+}
+
+.achievements-btn {
+  padding: 10px 28px;
+  background: transparent;
+  color: #008CFF;
+  border: 2px solid #008CFF;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.achievements-btn:hover {
+  background: #008CFF;
+  color: #fff;
+}
+
 
 

@@ -1,22 +1,27 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from "./assets/components/Navbar";
-import Hero from "./assets/components/Hero";
-import About from "./assets/components/About";
-import Faculty from "./assets/components/StatsBar";
-import Footer from "./assets/components/Footer";
-import StatsBar from './assets/components/StatsBar';
-
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Faculty from './pages/Faculty'
+import Events from './pages/Events'
+import Gallery from './pages/Gallery'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <About />
-      <StatsBar/>
-      <Footer />
-    </div>
-  );
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

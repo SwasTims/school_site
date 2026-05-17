@@ -1,13 +1,15 @@
 import Hero from '../components/Hero'
 import StatsBar from '../components/StatsBar'
-import AboutSection from '../components/About'
+import AboutSec from '../components/AboutSec'
+import Achievements from '../components/Achievements'
 
 function Home() {
   return (
     <div>
       <Hero />
-      <AboutSection />
+      <AboutSec />
       <StatsBar />
+      <Achievements/>
     </div>
   )
 }
