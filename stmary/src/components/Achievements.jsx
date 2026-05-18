@@ -12,13 +12,13 @@ function Achievements() {
         </div>
 
         <div className="achievement-card">
-          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=400" alt="Athletic Supremacy" />
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400" alt="Athletic Supremacy" />
           <h3 className="achievement-title">Athletic Supremacy</h3>
           <p className="achievement-desc">Shattering multiple track records this season, the St. Mary's Eagles continue to dominate regional inter-house championships.</p>
         </div>
 
         <div className="achievement-card">
-          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400" alt="Ivy League Placements" />
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400" alt="Ivy League Placements" />
           <h3 className="achievement-title">Ivy League Placements</h3>
           <p className="achievement-desc">The Class of 2024 has achieved record-breaking acceptance rates into global top-tier universities and Ivy League institutions.</p>
         </div>
