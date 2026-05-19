@@ -1,11 +1,15 @@
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 function Navbar() {
   const location = useLocation()
 
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar-logo">St. Mary's Academy</Link>
+      <Link to="/" className="navbar-logo">
+        <img src={logo} alt="St. Mary's Academy" className="navbar-logo-img" />
+        St. Mary's Academy
+      </Link>
 
       <ul className="navbar-links">
         <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>
