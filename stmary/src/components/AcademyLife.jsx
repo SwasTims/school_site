@@ -18,7 +18,7 @@ function AcademyLife() {
         </div>
       </div>
 
-      <div className="academy-video" onClick={() => window.open('https://www.youtube.com/watch?v=Exp2FcN3lCI', '_blank')}>
+      <div className="academy-video" onClick={() => window.open('https://www.youtube.com/watch?v=wPyLSBETAxo', '_blank')}>
         <img
           src="https://images.unsplash.com/photo-1562774053-701939374585?w=600"
           alt="Campus"
