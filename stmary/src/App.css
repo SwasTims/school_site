@@ -1254,6 +1254,382 @@ content: '';
   line-height: 1.7;
 }
 
+/* ── ADMISSION PAGE ── */
+.admission {
+  background-color: #FCF9F8;
+}
+
+.admission-hero {
+  position: relative;
+  height: 320px;
+  background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.admission-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 20, 60, 0.6);
+}
+
+.admission-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  padding: 0 32px;
+}
+
+.admission-hero-heading {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.admission-hero-sub {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.admission-process {
+  padding: 80px 64px;
+  /* background: #f9fafb; */
+  text-align: left;
+}
+
+.admission-process-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #BC0100;
+  display: block;
+  width: fit-content;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.admission-process-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #008CFF;
+}
+
+.admission-process-heading::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 44px;
+  width: 20px;
+  height: 3px;
+  background: #BC0100;
+}
+
+.admission-process-sub {
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.admission-steps {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.admission-step-card {
+  flex: 1;
+  min-width: 500px;
+  border: 1px solid #C0C7D6;
+  border-radius: 10px;
+  padding: 28px;
+  text-align: left;
+  background: #fff;
+}
+
+.admission-step-card--center {
+  min-width: 225px;
+  text-align: center;
+  background-color: #F6F3F2;
+}
+
+.admission-step-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.admission-step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #002D52;
+  margin-bottom: 10px;
+}
+
+.admission-step-desc {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+/* ── ADMISSION CTA ── */
+.admission-cta {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  background: #005CAB;
+  padding: 40px 48px;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 0 64px 80px;
+  border-radius: 10px;
+}
+.admission-cta-heading {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.admission-cta-sub {
+  color: #93c5fd;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  max-width: 580px;
+}
+
+.admission-cta-btn {
+  padding: 12px 28px;
+  background: #fff;
+  color: #005CAB;
+;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.admission-cta-btn:hover {
+  background: #008CFF;
+  color: #fff;
+}
+
+/* ── ADMISSION MATERIALS ── */
+.admission-materials {
+  padding: 80px 64px;
+  /* background: #fff; */
+  text-align: center;
+}
+
+.admission-materials-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #BC0100;
+  display: inline-block;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.admission-materials-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 24px);
+  width: 20px;
+  height: 3px;
+  background: #008CFF;
+}
+
+.admission-materials-heading::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 4px);
+  width: 20px;
+  height: 3px;
+  background: #BC0100;
+}
+
+.admission-materials-sub {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+.admission-materials-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.admission-material-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  background: #fff;
+  width: 280px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.admission-material-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admission-material-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admission-material-icon {
+  font-size: 1.5rem;
+  color: #BC0100;
+}
+
+.admission-material-title {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.admission-material-size {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.admission-material-download {
+  color: #2f2e2e;
+  font-size: 1.1rem;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/* ── FAQ ── */
+.admission-faq {
+  padding: 80px 64px;
+  background: #fff;
+  text-align: center;
+}
+
+.admission-faq-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #BC0100;
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.admission-faq-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 24px);
+  width: 20px;
+  height: 3px;
+  background: #008CFF;
+}
+
+.admission-faq-heading::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 4px);
+  width: 20px;
+  height: 3px;
+  background: #BC0100;
+}
+
+.admission-faq-list {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.faq-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px 24px;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.faq-icon {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+.faq-answer {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+/* ── JOIN BANNER ── */
+.admission-join {
+  background: #002D52;
+  padding: 64px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); ;
+}
+
+.admission-join-heading {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.admission-join-sub {
+  color: #ffffff;
+  font-size: 0.90rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .footer {
   background: #002D52;
   color: #fff;

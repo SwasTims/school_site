@@ -7,6 +7,7 @@ import Faculty from './pages/Faculty'
 import Events from './pages/Events'
 import Gallery from './pages/Gallery'
 import Footer from './components/Footer'
+import Admission from './pages/Admission'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/admission" element={<Admission />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
