@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+import ScrollToTop from './ScrollToTop'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -12,6 +14,7 @@ import Admission from './pages/Admission'
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

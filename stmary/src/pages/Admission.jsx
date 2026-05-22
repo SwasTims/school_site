@@ -71,7 +71,7 @@ function Admission() {
       </section>
 
       {/* CTA Banner */}
-      <section className="admission-cta">
+      <section className="admission-cta" id="admission-cta">
         <div className="admission-cta-text">
           <h3 className="admission-cta-heading">Secure Your Child's Future</h3>
           <p className="admission-cta-sub">

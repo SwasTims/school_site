@@ -1518,13 +1518,16 @@ content: '';
   color: #9ca3af;
   font-size: 0.8rem;
   margin-top: 2px;
-}
+}                                       
 
 .admission-material-download {
   color: #2f2e2e;
   font-size: 1.1rem;
   border: 1px solid #000;
   cursor: pointer;
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
 }
 
 /* ── FAQ ── */
@@ -1629,6 +1632,8 @@ content: '';
   max-width: 600px;
   margin: 0 auto;
 }
+
+
 
 .footer {
   background: #002D52;
